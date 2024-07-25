@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantics in HTML</title>
+    <style>
+      main {
+        background-color: #ede8f6;
+        display: grid;
+        grid-template-areas: "n1 n1 n1 n1 n1" "n2 n2 n2 n2 n2" "n31 n31 n32 n32 n32" "n4 n4 n4 n4 n4";
+        gap: 10px;
+        text-align: center;
+        border-radius: 4px;
+        padding: 10px;
+        min-width: 300px;
+        max-width: 400px;
+      }
+      main * {
+        /* border: 1px solid black; */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #ded1ed;
+        border-radius: 4px;
+      }
+      #n1 {
+        grid-area: n1;
+      }
+      #n2 {
+        display: block;
+        background-color: #fef2b5;
+        grid-area: n2;
+      }
+      #n31 {
+        grid-area: n31;
+      }
+      #n32 {
+        grid-area: n32;
+      }
+      #n32 * {
+        margin: 10px;
+      }
+      #n32 *{
+        border: 2px solid #a972f1;
+      }
+      #n4 {
+        grid-area: n4;
+      }
+      #n1,
+      #n2,
+      #n31,
+      #n4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #n1, #n4{
+        padding: 20px 0;
+        font-size: 1.25rem;
+      }
+      #n1, #n4, span{
+        font-weight: 500;
+      }
+
+      #n3211, #n3212{
+        padding: 20px 0;
+      }
+      #n322{
+        padding: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="n1">&lt;div&gt;</div>
+      <span id="n2">&lt;span&gt;</span>
+      <div id="n31">&lt;div&gt;</div>
+      <div id="n32">
+        &lt;div&gt;
+        <div id="n321">
+          &lt;div&gt;
+          <div id="n3211">&lt;div&gt;</div>
+          <div id="n3212">&lt;div&gt;</div>
+        </div>
+        <div id="n322">&lt;div&gt;</div>
+      </div>
+      <div id="n4">&lt;div&gt;</div>
+    </main>
+  </body>
+</html>

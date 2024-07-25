@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #18a1a1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.timer span {
+  font-size: 50px;
+}
+
+.timer span:not(:last-child) {
+  margin-right: 10px;
+}
+
+.timer span:nth-child(odd) {
+  background-color: #5f0d0d;
+  color: gold;
+  border-radius: 8px;
+  padding: 8px;
+  width: 80px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+form>* {
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+  outline: 2px solid salmon;
+}
+form button {
+  border: none;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>July 23 | JS Node type</title>
+</head>
+
+<body><!-- comment -->
+  <div>have a look in the console</div>
+  <script>
+    // for comment
+    // console.log(document.body.firstChild.tagName); // undefined (not an element)
+    // console.log(document.body.firstChild.nodeName); // #comment
+
+
+    console.log(document.body.tagName); // undefined (not an element)
+    console.log(document.body.nodeName); // #comment
+
+    // for document
+    console.log(document.tagName); // undefined (not an element)
+    console.log(document.nodeName); // #document
+  </script>
+</body>
+
+</html>
