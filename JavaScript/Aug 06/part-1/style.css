@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+body,
+input,
+button,
+select,
+textarea {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn{
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: blue;
+  background-color: whitesmoke;
+}
+
+.btn-clicked{
+  background-color: blue;
+  color: whitesmoke;
+  outline: 1px solid skyblue;
+}
